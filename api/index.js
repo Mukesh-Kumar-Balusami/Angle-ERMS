@@ -1,26 +1,23 @@
 import express from 'express';
 import mongoose from 'mongoose';
 import dotenv from 'dotenv';
-
+import userRouter from './routes/user.routes.js';
 
 dotenv.config();
 
 mongoose
     .connect(process.env.MONGO)
     .then(()=>{
-        console.log('DB Connected');
+        console.log('DB is Connected');
     })
     .catch((err)=>{
         console.log(err);
     });
 
-// mongoose
-// .connect("mongodb+srv://balusamimukesh:<password>@angle-erms-database.2w8z5np.mongodb.net/?retryWrites=true&w=majority&appName=Angle-ERMS-Database").then(()=>{
-//     console.log('Connected');
-// });
-
 const app = express();
 
-app.listen(300, () => {
+app.listen(3000, () => {
     console.log("Server is running on the port 3000...!!!...")
 });
+
+app.use('/api/user', userRouter);
