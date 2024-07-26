@@ -10,9 +10,14 @@ export default function Header() {
 
   return (
     <Navbar className='navbar border-b-2'>
-        <Link to='/' className='self-center whitespace-nowrap text-sm sm:test-xl font-bold dark:text-white'>
-            <span className='anglelogo px-2 py-1 bg-gradient-to-r from-blue-300 via-blue-400 to-blue-600 rounded-lg text-white'>Angle's ERMS</span>
-        </Link>
+        <div>
+            <Link to='/' className='self-center whitespace-nowrap text-sm sm:test-xl font-bold dark:text-white'>
+                <span className='anglelogo px-2 py-1 bg-gradient-to-r from-blue-300 via-blue-400 to-blue-600 rounded-lg text-white'>ERMS</span>
+            </Link>
+            <p className='font-bold text-red-600 text-xs'>
+                An Angle's Product
+            </p>
+        </div>
         <form>
             <TextInput
                 type='text'
