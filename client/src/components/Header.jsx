@@ -26,11 +26,11 @@ export default function Header() {
                 className='hidden lg:inline'
             />
         </form>
-        <button className='w-12 h-10 lg:hidden' color='black' pill>
+        <button className='w-12 h-10 lg:hidden' color='black' >
             <AiOutlineSearch/>
         </button>
         <div className='flex gap-2 md:order-2'>
-            <Button className='w-12 h-10 sm:inline' color='grey' pill>
+            <Button className='w-12 h-10 sm:inline' color='grey' >
                 <FaMoon/>
             </Button>
             <Link to='/signin'>
