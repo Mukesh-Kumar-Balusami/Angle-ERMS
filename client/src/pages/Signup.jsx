@@ -75,7 +75,7 @@ export default function Signup() {
         {/* Left side */}
         <div className="flex-1">
           <Link to='/' className='font-bold dark:text-white text-4xl'>
-              <span className='anglelogo px-2 py-1 bg-gradient-to-r from-blue-300 via-blue-400 to-blue-600 rounded-lg text-white'>ERMS</span>
+              <span className='anglelogo px-2 py-1 bg-gradient-to-r from-green-300 via-green-400 to-green-600 rounded-lg text-white'>ERMS</span>
           </Link>
           <p className='mt-5 text-xl font-extrabold'>
             Enterprise Resource Management System
@@ -88,6 +88,11 @@ export default function Signup() {
         {/* Right side */}
         <div className="flex-1">
           <form className='flex flex-col gap-4' onSubmit={handleSubmit}>
+          <div className="text-3xl font-extrabold font-sans text-blue-500">
+              <h1>
+                Sign UP
+              </h1>
+            </div>
             <div>
               <Label value='Your Username'/>
               <TextInput
@@ -113,7 +118,7 @@ export default function Signup() {
               <TextInput
                 className='border-indigo-600'
                 type='password'
-                placeholder='Password'
+                placeholder='**********'
                 id='password'
                 onChange={handleChange}
               />
@@ -133,7 +138,7 @@ export default function Signup() {
             <span>
               Have an account?
             </span>
-            <Link to='/sign-in' className='text-red-500 font-bold'>
+            <Link to='/signin' className='text-red-500 font-bold'>
               Sign In
             </Link>
           </div>

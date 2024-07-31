@@ -11,7 +11,7 @@ export default function FooterCoomponent() {
             <div className="grid w-full justify-between sm:flex md:grid-cols-1">
                 <div className='mt-5'>
                     <Link to='/' className='self-center whitespace-nowrap text-lg sm:test-xl font-bold dark:text-white'>
-                        <span className='anglelogo px-2 py-1 bg-gradient-to-r from-blue-300 via-blue-400 to-blue-600 rounded-lg text-white'>ERMS</span>
+                        <span className='anglelogo px-2 py-1 bg-gradient-to-r from-green-300 via-green-400 to-green-600 rounded-lg text-white'>ERMS</span>
                     </Link>
                 </div>
                 <div className="grid grid-cols-2 gap-5 mt-4 sm:grid-cols-3 sm:gap-6">
