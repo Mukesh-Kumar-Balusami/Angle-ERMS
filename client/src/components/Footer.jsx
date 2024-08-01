@@ -1,6 +1,7 @@
 import React from 'react'
 import { Footer } from 'flowbite-react'
 import { Link } from 'react-router-dom'
+import AngleLogo from '../assets/ANGLE.png'
 import { BsFacebook, BsInstagram, BsWhatsapp, BsGithub, BsTwitter, BsPinterest } from 'react-icons/bs'
 
 
@@ -9,10 +10,12 @@ export default function FooterCoomponent() {
     <Footer container className='border border-t-8 border-teal-500'>
         <div className="w-full max-w-7xl mx-auto">
             <div className="grid w-full justify-between sm:flex md:grid-cols-1">
-                <div className='mt-5'>
-                    <Link to='/' className='self-center whitespace-nowrap text-lg sm:test-xl font-bold dark:text-white'>
-                        <span className='anglelogo px-2 py-1 bg-gradient-to-r from-green-300 via-green-400 to-green-600 rounded-lg text-white'>ERMS</span>
-                    </Link>
+                <div className='mt-5 m-24'>
+                    <img
+                        src={AngleLogo}
+                        alt='Angle Software Company'
+                        className="w-40 h-41 border-gray-100 shadow-sm transition-transform transform hover:scale-125" 
+                    />
                 </div>
                 <div className="grid grid-cols-2 gap-5 mt-4 sm:grid-cols-3 sm:gap-6">
                     <div>

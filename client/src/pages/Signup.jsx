@@ -1,6 +1,7 @@
 import { Alert, Button, Label, Spinner, TextInput } from 'flowbite-react'
 import React, { useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
+import AngleLogo from '../assets/ANGLE.png'
 
 
 export default function Signup() {
@@ -73,16 +74,16 @@ export default function Signup() {
       <div className="flex flex-col md:flex-row md:items-center p-3 max-w-3xl mx-auto gap-5">
           
         {/* Left side */}
-        <div className="flex-1">
-          <Link to='/' className='font-bold dark:text-white text-4xl'>
-              <span className='anglelogo px-2 py-1 bg-gradient-to-r from-green-300 via-green-400 to-green-600 rounded-lg text-white'>ERMS</span>
-          </Link>
-          <p className='mt-5 text-xl font-extrabold'>
-            Enterprise Resource Management System
-          </p>
-          <p className='mt-2 text-sm font-semibold'>
-            Organise your resources in a better way :)
-          </p>
+        <div className="flex-1 items-end">
+              <Link to='/' className='font-bold dark:text-white text-4xl'>
+                  <span className='anglelogo px-32 py-1 bg-gradient-to-r from-green-300 via-green-400 to-green-600 rounded-lg text-white'>ERMS</span>
+              </Link>
+              <p className='mt-5 text-xl font-extrabold'>
+                Enterprise Resource Management System
+              </p>
+              <p className='mt-2 text-sm font-semibold'>
+                Organise your resources in a better way :)
+              </p>
         </div>
 
         {/* Right side */}

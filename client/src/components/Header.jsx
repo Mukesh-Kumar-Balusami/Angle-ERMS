@@ -3,6 +3,7 @@ import React from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import {AiOutlineSearch} from 'react-icons/ai'
 import {FaMoon} from 'react-icons/fa'
+import AngleLogo from '../assets/ANGLE.png'
 
 export default function Header() {
 
@@ -11,12 +12,17 @@ export default function Header() {
   return (
     <Navbar className='navbar border-b-2'>
         <div>
-            <Link to='/' className='self-center whitespace-nowrap text-sm sm:test-xl font-bold dark:text-white'>
+            <img
+                src={AngleLogo}
+                alt='Angle Software Company'
+                className="w-15 h-16 border-gray-100 shadow-sm transition-transform transform hover:scale-125" 
+            />
+            {/* <Link to='/' className='self-center whitespace-nowrap text-sm sm:test-xl font-bold dark:text-white'>
                 <span className='anglelogo px-2 py-1 bg-gradient-to-r from-green-300 via-green-400 to-green-600 rounded-lg text-white'>ERMS</span>
             </Link>
             <p className='font-bold text-red-600 text-xs'>
                 An Angle's Product
-            </p>
+            </p> */}
         </div>
         <form>
             <TextInput

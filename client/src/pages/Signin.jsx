@@ -54,7 +54,7 @@ export default function Signin() {
         {/* Left side */}
         <div className="flex-1">
           <Link to='/' className='font-bold dark:text-white text-4xl'>
-              <span className='anglelogo px-2 py-1 bg-gradient-to-r from-green-300 via-green-400 to-green-600 rounded-lg text-white'>ERMS</span>
+              <span className='anglelogo px-32 py-1 bg-gradient-to-r from-green-300 via-green-400 to-green-600 rounded-lg text-white'>ERMS</span>
           </Link>
           <p className='mt-5 text-xl font-extrabold'>
             Enterprise Resource Management System
